@@ -1,0 +1,54 @@
+#include<iostream>
+#include<math.h>
+#include<cstdlib>
+
+using namespace std;
+int main()
+    {
+    int x1,v1,x2,v2;
+    float y;
+    cin>>x1>>v1>>x2>>v2;
+   
+   // int flag=1;
+    if(v1!=v2)
+   y=(float)(x2-x1)/(v1-v2);
+    else{
+        cout<<"NO";
+        exit(1);}
+  
+    if(y<0)
+        cout<<"NO";
+    else{ 
+    if(y==floor(y))
+        { 
+       
+        cout<<"YES";}
+    else
+        cout<<"NO";}
+       
+         
+  /*  do
+      { 
+        x1=x1+v1;
+        x2=x2+v2;
+        if(x1==x2)
+    {
+            flag=0;
+            break;
+            
+        }
+        
+        
+        
+    }while(flag==1);
+    
+    if(flag==0)
+        cout<<"YES";
+  if(flag==1)
+        cout<<"NO";
+        */
+
+    
+    return 0;
+    
+  }
